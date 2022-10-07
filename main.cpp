@@ -1,9 +1,11 @@
 #include <iostream>
-
-
+#include "caesar.h"
 #include "funcs.h"
 
 int main()
 {
-  return 0;
+  char a = shiftChar('W', 5);
+  std::cout << a << "\n";
+  std::string s = encryptCaesar("Hello, World!", 10);
+  std::cout << s << "\n";
 }
