@@ -8,7 +8,7 @@ char shiftChar(char c, int rshift) {
         return char(ch);
     }
     while(counter < rshift) {
-        if(ch == 90) {
+        if(ch == 91) {
             ch = 64;
         }
         if(ch == 122) {
@@ -29,3 +29,4 @@ std::string encryptCaesar(std::string plaintext, int rshift) {
     }
     return encryptedStr;
 }
+
