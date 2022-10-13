@@ -4,11 +4,11 @@
 char shiftChar(char c, int rshift) {
     int counter = 0;
     int ch = int(c);
-    if(ch <= 65) {
+    if(ch < 65 || (90 < ch && ch < 97) || ch > 122) {
         return char(ch);
     }
     while(counter < rshift) {
-        if(ch == 91) {
+        if(ch == 90) {
             ch = 64;
         }
         if(ch == 122) {

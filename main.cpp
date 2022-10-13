@@ -8,7 +8,7 @@ int main()
 {
   char a = shiftChar('W', 5);
   std::cout << a << "\n";
-  std::string s = encryptCaesar("Hello, World!", 10);
+  std::string s = encryptCaesar("Ant", 5);
   std::cout << s << "\n";
   std::string st = encryptVigenere("Hello, World!", "cake");
   std::cout << st << "\n";
