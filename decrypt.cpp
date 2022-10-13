@@ -8,11 +8,11 @@ char decryptShift(char c, int rshift) {
         return char(ch);
     }
     while(counter < rshift) {
-        if(ch == 64) {
-            ch = 90;
+        if(ch == 65) {
+            ch = 91;
         }
-        if(ch == 96) {
-            ch = 122;
+        if(ch == 97) {
+            ch = 123;
         }
         ch--;
         counter++;
@@ -54,7 +54,6 @@ std::string decryptVigenere(std::string ciphertext, std::string keyword) {
         } else {
             digit = digit - 97;
         }
-        std::cout << digit <<  " " << ciphertext[textCounter] << "\n";
         endString += decryptShift(ciphertext[textCounter], digit);
         keyCounter++;
         textCounter++;

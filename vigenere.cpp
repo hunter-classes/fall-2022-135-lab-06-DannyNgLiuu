@@ -26,7 +26,6 @@ std::string encryptVigenere(std::string plaintext, std::string keyword) {
         } else {
             digit = digit - 97;
         }
-        std::cout << digit <<  " " << plaintext[textCounter] << "\n";
         endString += shiftChar(plaintext[textCounter], digit);
         keyCounter++;
         textCounter++;
